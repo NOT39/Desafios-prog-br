@@ -43,6 +43,12 @@
 // ? Verifica se algo é verdade
 // : Diz o que acontece se não for verdade
 
+// Variáveis
+
+// var   - Escopo global
+// let   - Escopo local
+// const - Pode ser modificada, mas não reatribuída e escopo local.
+
 var a = 5;
 var b = 2;
 var idade = 18;

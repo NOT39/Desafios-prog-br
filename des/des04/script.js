@@ -24,7 +24,7 @@ function adicionarAluno(){
     var notas = [prompt('Qual a primeira nota? '), prompt('Qual a segunda nota?')];
     var media = tirarMedia(notas);
     var aprovado = condicao(media);
-    return [nome, notas, media, aprovado]
+    return [nome, notas, media, aprovado];
 }
 
 var alunos = [];
