@@ -29,6 +29,7 @@
         height: 400px;
         padding: 20px 0px;
         position: relative;
+        background-color: red;
     }
 
     main > .content {
