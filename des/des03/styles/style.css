@@ -87,6 +87,7 @@ main h1 {
     max-width: 33%;
 }
 
+
 @media screen and (min-width: 800px) {
 
     #logo {
@@ -110,6 +111,7 @@ main h1 {
         height: 400px;
         padding: 20px 0px;
         position: relative;
+        background-color: red;
     }
 
     main > .content {
