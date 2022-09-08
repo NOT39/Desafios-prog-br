@@ -18,14 +18,48 @@
 
     .social {
         display: inline;
-        position: absolute;
-        right: 0px;
-        height: 100px;
-        padding-right: 20px;
-        padding-top: 10px;
+
     }
 
     .social img {
         margin-left: 10px;
+    }
+
+    main {
+        height: 400px;
+        padding: 20px 0px;
+        position: relative;
+    }
+
+    main > .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    main .textContainer {
+        float: left;
+        max-width: 30%;
+        height: 300px;
+        text-align: left;
+    }
+
+    main .textContainer h1 {
+        margin-top: 40%;
+    }
+
+    main .container {
+        float: right;
+        clear: right;
+        max-height: 300px;
+        max-width: 70%;
+        overflow: hidden;
+    }
+
+    main .container img {
+        float: right;
+        margin-left: 5px;
+        max-width: 200px;
     }
 }
