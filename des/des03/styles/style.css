@@ -33,15 +33,6 @@ nav img.mobile {
     height: 70%;
 }
 
-.social {
-    display: none;
-    position: absolute;
-    right: 0px;
-    height: 100px;
-    padding-right: 20px;
-    padding-top: 10px;
-}
-
 #logo {
     height: 100%;
     position: absolute;
@@ -55,6 +46,20 @@ header .content {
     background-size: cover;
     background-attachment: fixed;
     height: calc(100vh - 100px);
+}
+
+.social {
+    display: none;
+    float: right;
+    right: 0px;
+    margin-right: 10px;
+}
+
+.social > a > img {
+    width: 80px;
+    float: right;
+    clear: right;
+    margin-top: 20px;
 }
 
 header .content > h1 {
