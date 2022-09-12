@@ -48,19 +48,7 @@ header .content {
     height: calc(100vh - 100px);
 }
 
-.social {
-    display: none;
-    float: right;
-    right: 0px;
-    margin-right: 10px;
-}
 
-.social img {
-    width: 80px;
-    float: right;
-    clear: right;
-    margin-top: 20px;
-}
 
 header .content > h1 {
     text-align: center;
