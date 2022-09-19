@@ -5,9 +5,9 @@
 // Crianças valem por 0,5
 
 function Calcular(){
-    let adultos = parseInt(document.getElementById("adultos").value);
-    let criancas = parseInt(document.getElementById("criancas").value);
-    let horas = parseFloat(document.getElementById("horas").value);
+    let adultos = parseInt(document.getElementById("adultos").value) || 0;
+    let criancas = parseInt(document.getElementById("criancas").value) || 0;
+    let horas = parseFloat(document.getElementById("horas").value) || 0;
 
     carne = document.getElementById("carne");
     cerveja = document.getElementById("cerveja");
