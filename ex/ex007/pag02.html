@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            position: relative;
+            width: 640px;
+            height: 360px;
+        }
+
+        .video {
+            width: 100%;
+            height: 100%;
+            background-color: red;
+        }
+
+        .controle {
+            display: block;
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        .controle:hover .btn {
+            display: inline;
+        }
+
+        .btn {
+            display: none;
+            position: relative;
+            top: 100%;
+            transform: translateY(-100%);
+            width: 60px;
+            height: 60px;
+            margin: 10px;
+            padding: 10px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <video id="video1" class="video" src="videos/891396726-104218624-3f0baf92-9d86-4a69-83e5-9ad7a4a352fd.mp4">
+
+        </video>
+        
+        <div class="controle">
+            <img class="btn" onclick="retroceder()" src="#back" alt="">
+            <img class="btn" onclick="avancar()" src="#foward" alt="">
+            <img class="btn" onclick="diminuirVel()" src="#decrease" alt="">
+            <img class="btn" onclick="aumentarVel()" src="#increase" alt="">
+            <img class="btn" onclick="iniciar()" src="#play" alt="">
+            <img class="btn" onclick="parar()" src="#stop" alt="">
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
