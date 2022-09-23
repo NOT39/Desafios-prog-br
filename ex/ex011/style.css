@@ -1,0 +1,42 @@
+* {
+    margin: 5px;
+}
+
+html {
+    background-color: gray;
+}
+
+[data-teste="ui"] {
+    background-color: lightgray;
+}
+
+[data-teste^="o"] {
+    background-color: darkgrey;
+}
+
+/* 
+    ~ que tenha a palavra
+    ^ que comece com
+    $ que termine com
+    * que tenha em algum lugar
+*/
+
+h2, .p2 {
+    background-color: green;
+}
+
+header > p {
+    background-color: blue;
+}
+
+header + div {
+    background-color: darkgray;
+}
+
+header ~ p {
+    background-color: darkblue;
+}
+
+div p {
+    background-color:  darkgreen;
+}

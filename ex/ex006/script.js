@@ -7,5 +7,6 @@ h1.addEventListener('click', function(){
 
     h1.dataset.teste = 5
     console.log(h1.dataset.teste);
+    console.log(h1);
 
 })

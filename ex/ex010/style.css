@@ -1,0 +1,52 @@
+html {
+    background-color: gray;
+}
+
+p::first-letter {
+    color: red;
+    font-size: 5rem;
+}
+
+p::first-line {
+    color: blue;
+}
+
+input:focus{
+    color: red;
+}
+
+li {
+    list-style: none;
+}
+
+li::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(images/Sign-check-icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.teste1 li:first-of-type {
+    color: blue;
+}
+
+.teste1 li:nth-child(3n){
+    color: purple;
+}
+
+.teste2 li:nth-of-type(odd){
+    color: blue;
+}
+
+.teste2 li:nth-of-type(even){
+    color: purple;
+}
+
+p::selection {
+    background-color: yellow;
+    color: orange;
+}
