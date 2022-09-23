@@ -1,0 +1,26 @@
+:root {
+    --corPrimária: rgb(100, 100, 100);
+    --sqrSize: 300px;
+}
+
+.p2 {
+    background-color: var(--corPrimária);
+    font-size: 35px;
+}
+
+.p3 {
+    background-color: var(--corPrimária);
+    font-size: 25px;
+}
+
+.square1 {
+    width: var(--sqrSize);
+    height: var(--sqrSize);
+    background-color: blue;
+}
+
+.square2 {
+    width: var(--sqrSize);
+    height: 200px;
+    background-color: red;
+}

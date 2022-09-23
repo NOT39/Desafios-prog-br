@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+.container {
+    width: 100%;
+    background-color: darkblue;
+}
+
+.primeira {
+    display: inline-block;
+    width: calc(100% - 300px);
+    height: 300px;
+    background-color: darkred;
+    margin-bottom: -4px;
+}
+
+.segunda {
+    margin-left: -4px;
+    margin-bottom: -4px;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: darkmagenta;
+}
+
+.terceira {
+    width: calc(100% - 100px);
+    height: 150px;
+    background-color: darkgoldenrod;
+    margin: auto;
+}
