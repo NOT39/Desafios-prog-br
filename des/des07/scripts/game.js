@@ -7,6 +7,7 @@ let symbols = ['red', 'blue']
 function handleMove(position){
 
     if(gameOver){
+        console.log('O jogo acabou!')
         return;
     }
 
@@ -18,7 +19,38 @@ function handleMove(position){
         }else{
             playerTime = 0;
         }
+
+        isWin();
+
     } else {
         alert('Essa posição já esta ocupada!');
     }
+}
+
+function isWin(){
+    winCondition = [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6]
+    ];
+
+    winCondition.forEach(element => {
+        let squareA = board[element[0]];
+        let squareB = board[element[1]];
+        let squareC = board[element[2]];
+        console.log(squareA)
+
+        if(squareA != ''){
+            if(squareA == squareB){
+                if(squareB == squareC){
+                    gameOver = true;
+                }
+            }
+        }
+    });
 }

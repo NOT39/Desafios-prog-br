@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function handleClick(event){
-
     let position = event.target.id;
 
     handleMove(position);
