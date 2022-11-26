@@ -9,15 +9,16 @@
 @media screen and (min-width: 800px) {
 
     #logo {
-        left: 20px;
+        position: absolute;
+        left: 10px;
     }
 
-    nav img.wide-screen {
+    nav img.mobile {
         display: none;
     }
 
     .social {
-        display: flex;
+        display: inline-block;
     }
 
     .social img {

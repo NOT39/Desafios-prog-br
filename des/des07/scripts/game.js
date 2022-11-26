@@ -1,22 +1,22 @@
 let board = ['', '', '', '', '', '', '', '', ''];
 let playerTime = 0;
 let gameOver = false;
-let symbols = ['red', 'blue']
+let symbols = ['red', 'blue'];
 
 // Adiciona o valor do player ao tabuleiro
-function handleMove(position){
+function handleMove(position) {
 
-    if(gameOver){
-        console.log('O jogo acabou!')
+    if (gameOver) {
+        console.log('O jogo acabou!');
         return;
     }
 
-    if (board[position] == ''){
+    if (board[position] == '') {
         board[position] = symbols[playerTime];
 
-        if (playerTime == 0){
+        if (playerTime == 0) {
             playerTime = 1;
-        }else{
+        } else {
             playerTime = 0;
         }
 
@@ -27,7 +27,7 @@ function handleMove(position){
     }
 }
 
-function isWin(){
+function isWin() {
     winCondition = [
         [0, 1, 2],
         [3, 4, 5],
@@ -43,13 +43,11 @@ function isWin(){
         let squareA = board[element[0]];
         let squareB = board[element[1]];
         let squareC = board[element[2]];
-        console.log(squareA)
+        console.log(squareA);
 
-        if(squareA != ''){
-            if(squareA == squareB){
-                if(squareB == squareC){
-                    gameOver = true;
-                }
+        if (squareA != '') {
+            if (squareA == squareB && squareB == squareC) {
+                gameOver = true;
             }
         }
     });

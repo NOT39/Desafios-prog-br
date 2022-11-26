@@ -23,9 +23,9 @@ nav {
     justify-content: space-between;
 }
 
-nav img.wide-screen {
+nav img.mobile {
     margin-left: 10px;
-    height: 70%;
+    height: 70px;
 }
 
 #logo {
